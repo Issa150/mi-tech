@@ -219,10 +219,7 @@ body {
 
 
                     img {
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
+                        object-position: 0 20%;
                     }
 
                     .context {
@@ -308,6 +305,7 @@ body {
                     'featured featured first second'
                     'featured featured third fourth';
                     gap: 1em;
+                    display: none;
 
                     /* common style for all img in this container */
                     img{
@@ -331,6 +329,10 @@ body {
                     }
                     img:nth-child(5){
                         grid-area: fourth;
+                    }
+
+                    &.active{
+                        display: grid;
                     }
                 }
             }
