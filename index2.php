@@ -1,72 +1,32 @@
 <?php
 include_once "config/function.config.php";
-include_once "config/database.php";
-////////////////////////////////
-function getMarque($marque = "Samsung")
-{
-    $pdo = dbConnection();
-    $sql = "SELECT * FROM telephones WHERE brand = :marque ORDER BY release_date DESC  LIMIT 3 ";
-    $query = $pdo->prepare($sql);
-    $query->execute(array(
-        ":marque" => $marque
-    ));
 
-    $result = $query->fetchall();
-    return $result;
-}
-
-
-
-// selection de la marque
-if (isset($_GET['marque'])) {
-    $marque = $_GET['marque'];
-    $maMarque = getMarque($marque);
-} else {
-    $maMarque = getMarque();
-}
-
-// debug($maMarque);
-
-/////////////////////////////////
 $title = 'Accueil';
 include_once "inc/header.inc.php"; ?>
 
 
 <header>
-
-
     <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
 
-            <?php foreach ($maMarque as $telephone) { ?>
-                <div class="swiper-slide">
-                    <img src="assets/imgs/<?= $telephone['image'] ?>" alt="">
-                    <div class="context">
-                        <h2><?= $telephone['model'] ?></h2>
+            <div class="swiper-slide">
+                <img src="assets/imgs/galaxyIA.jpg" alt="">
+                <!-- <div class="context">
+            <h2>2024 <br> 12.5% Remise</h2>
+            <button>Découvréz</button>-->
 
-                    </div>
-
-                </div>
-            <?php } ?>  
-            <!-- une afiche d'article -->
-            <!-- <div class="swiper-slide"> -->
-                <!-- l'image d'article -->
-                <!-- <img src="assets/imgs/galaxyIA.jpg" alt="">
-                <div class="context">
-                    <h2>2024 <br> 12.5% Remise</h2>
-                    <button>Découvréz</button>
-
-                </div>
-            </div> -->
+            <!-- </div> -->
         </div>
-
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+            <img src="assets/imgs/photo.jpg" alt="">
+        </div>
     </div>
 
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    </div>
 </header>
 
 <section>

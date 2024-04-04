@@ -42,9 +42,9 @@
             </div>
 
             <ul>
-                <li>Samsung</li>
-                <li>Apple</li>
-                <li>Xiaomi</li>
-                <li>Google</li>
+                <li><a href="index.php?marque=samsung">Samsung</a></li>
+                <li><a href="index.php?marque=apple">Apple</a></li>
+                <li><a href="index.php?marque=xiaomi">Xiaomi</a></li>
+                <li><a href="index.php?marque=google">Google</a></li>
             </ul>
         </nav>
