@@ -15,12 +15,32 @@ function getMarque($marque = "Samsung")
     return $result;
 }
 
+// function getSerie($marque){
+//     $pdo = dbConnection();
+//     $sql = "SELECT * FROM telephones WHERE brand = :marque";
+//     $query = $pdo->prepare($sql);
+//     $query->execute(array(
+//         ":marque" => $marque
+//     ));
+
+//     $result = $query->fetchall();
+//     return $result;
+// }
+
 
 
 // selection de la marque
 if (isset($_GET['marque'])) {
     $marque = $_GET['marque'];
     $maMarque = getMarque($marque);
+
+    // $phonesByMarque = getSerie($marque);
+    // debug($phonesByMarque);
+    // foreach($phonesByMarque as $phone){
+    //     $phone['serie']
+    // }
+
+
 } else {
     $maMarque = getMarque();
 }
@@ -46,19 +66,8 @@ include_once "inc/header.inc.php"; ?>
                         <h2><?= $telephone['model'] ?></h2>
 
                     </div>
-
                 </div>
             <?php } ?>  
-            <!-- une afiche d'article -->
-            <!-- <div class="swiper-slide"> -->
-                <!-- l'image d'article -->
-                <!-- <img src="assets/imgs/galaxyIA.jpg" alt="">
-                <div class="context">
-                    <h2>2024 <br> 12.5% Remise</h2>
-                    <button>Découvréz</button>
-
-                </div>
-            </div> -->
         </div>
 
 

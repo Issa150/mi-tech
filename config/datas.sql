@@ -589,3 +589,108 @@ CREATE TABLE telephones (
     -- 10, 168, '146.3 x 70.9 x 7.6 mm'
     -- );
 
+--UPDATE repeat pixel 7 => 8
+
+    -- UPDATE telephones
+    -- SET
+    -- name = 'Google Pixel 8 Pro',
+    -- model = 'Pixel 8 Pro',
+    -- price = 899.99,
+    -- description = 'The latest flagship Pixel with a large display, powerful camera system, and Google Tensor G3 chip.',
+    -- image = 'pixel8pro.jpg',
+    -- quantity = 45,
+    -- release_date = '2024-10-01',
+    -- screen_size = 6.7,
+    -- battery_capacity = 5200,
+    -- operating_system = 'Android 14',
+    -- processor_type = 'Google Tensor G3',
+    -- ram_size = 12,
+    -- storage_capacity = 256,
+    -- rear_camera_megapixels = 50,
+    -- front_camera_megapixels = 12,
+    -- weight = 215,
+    -- dimensions = '165.1 x 76.6 x 8.7 mm'
+    -- WHERE id = 14;
+
+--UPDATE repeate s23 = s24
+    -- UPDATE telephones
+    -- SET
+    -- name = 'Samsung Galaxy S24 Ultra',
+    -- model = 'Galaxy S24 Ultra',
+    -- price = 1299.99,
+    -- description = 'The latest top-of-the-line Samsung flagship with an even more stunning display and powerful camera.',
+    -- image = 'galaxys24ultra.jpg',
+    -- quantity = 40,
+    -- release_date = '2024-02-16',
+    -- screen_size = 6.8,
+    -- battery_capacity = 5100,
+    -- operating_system = 'Android 13',
+    -- processor_type = 'Qualcomm Snapdragon 8 Gen 3',
+    -- ram_size = 12,
+    -- storage_capacity = 256,
+    -- rear_camera_megapixels = 200,
+    -- front_camera_megapixels = 12,
+    -- weight = 228,
+    -- dimensions = '165.3 x 77.9 x 8.9 mm'
+    -- WHERE id = 2;
+
+--compelete serie de S23 ,pro
+    -- INSERT INTO telephones (
+    --     name, brand, model, price, description, image, quantity,
+    --     release_date, screen_size, battery_capacity, operating_system,
+    --     processor_type, ram_size, storage_capacity, rear_camera_megapixels,
+    --     front_camera_megapixels, weight, dimensions
+    -- ) VALUES (
+    --     'Samsung Galaxy S23 Plus', 'Samsung', 'Galaxy S23 Plus', 1199.99,
+    --     'The top-of-the-line Samsung flagship with a stunning display and powerful camera.',
+    --     'galaxys23pro.jpg', 35, '2023-02-17', 6.8, 5000,
+    --     'Android 13', 'Qualcomm Snapdragon 8 Gen 2', 8, 256, 200, 12, 234,
+    --     '163.3 x 77.9 x 8.9 mm'
+    -- );
+
+    -- INSERT INTO telephones (
+    --     name, brand, model, price, description, image, quantity,
+    --     release_date, screen_size, battery_capacity, operating_system,
+    --     processor_type, ram_size, storage_capacity, rear_camera_megapixels,
+    --     front_camera_megapixels, weight, dimensions
+    -- ) VALUES (
+    --     'Samsung Galaxy S23', 'Samsung', 'Galaxy S23', 999.99,
+    --     'The latest Samsung flagship with a beautiful display and advanced camera system.',
+    --     'galaxys23.jpg', 40, '2023-02-17', 6.4, 4500,
+    --     'Android 13', 'Qualcomm Snapdragon 8 Gen 2', 6, 128, 108, 10, 210,
+    --     '155.7 x 71.2 x 7.6 mm'
+    -- );
+
+--compelete serie de S24
+    -- INSERT INTO telephones (
+    --     name, brand, model, price, description, image, quantity,
+    --     release_date, screen_size, battery_capacity, operating_system,
+    --     processor_type, ram_size, storage_capacity, rear_camera_megapixels,
+    --     front_camera_megapixels, weight, dimensions
+    -- ) VALUES (
+    --     'Samsung Galaxy S24 Plus', 'Samsung', 'Galaxy S24 Plus', 1299.99,
+    --     'The ultimate Samsung flagship with a massive display and advanced camera system.',
+    --     'galaxys24plus.jpg', 30, '2024-02-17', 6.9, 5500,
+    --     'Android 14', 'Qualcomm Snapdragon 8 Gen 3', 12, 512, 250, 16, 240,
+    --     '170.2 x 78.6 x 8.2 mm'
+    -- );
+
+    -- INSERT INTO telephones (
+    --     name, brand, model, price, description, image, quantity,
+    --     release_date, screen_size, battery_capacity, operating_system,
+    --     processor_type, ram_size, storage_capacity, rear_camera_megapixels,
+    --     front_camera_megapixels, weight, dimensions
+    -- ) VALUES (
+    --     'Samsung Galaxy S24', 'Samsung', 'Galaxy S24', 1099.99,
+    --     'The latest Samsung flagship with a beautiful display and powerful camera.',
+    --     'galaxys24.jpg', 40, '2024-02-17', 6.5, 4800,
+    --     'Android 14', 'Qualcomm Snapdragon 8 Gen 3', 8, 256, 200, 12, 220,
+    --     '162.1 x 73.4 x 7.8 mm'
+    -- );
+
+
+
+
+
+
+
